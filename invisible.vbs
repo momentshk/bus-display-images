@@ -1,2 +1,1 @@
-Set WshShell = CreateObject("WScript.Shell")
-WshShell.Run chr(34) & "auto_upload.bat" & chr(34), 0, False
+CreateObject("WScript.Shell").Run "cmd /c ""D:\Billy Home\Billy Document\Bus Photo\GitHub\bus-display-images\auto_upload.bat""", 0, False
