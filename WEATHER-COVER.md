@@ -1,6 +1,6 @@
 # 自動天氣開機圖案
 
-GitHub Actions 每 5 分鐘讀取香港天文台的 `warnsum` 開放數據，並更新 `OTHER/cover.png`。
+GitHub Actions 每 5 分鐘讀取香港天文台的 `warnsum` 開放數據，並更新 `OTHER/cover.png`。排程由第 1 分鐘開始（1、6、11…），避開每小時正點較繁忙的時段。
 
 ## 對應
 
