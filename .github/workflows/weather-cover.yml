@@ -35,6 +35,12 @@ jobs:
             fi
           }
 
+          ts_action="$(jq -r '.WTS.actionCode // ""' <<<"$response")"
+          ts_code="$(jq -r '.WTS.code // ""' <<<"$response")"
+          if [[ "$ts_action" != "CANCEL" && "$ts_code" == "WTS" ]]; then
+            consider "Thunderstorm.png" 40
+          fi
+
           tc_action="$(jq -r '.WTCSGNL.actionCode // ""' <<<"$response")"
           tc_code="$(jq -r '.WTCSGNL.code // ""' <<<"$response")"
           if [[ "$tc_action" != "CANCEL" ]]; then
