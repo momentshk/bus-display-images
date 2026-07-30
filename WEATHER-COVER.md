@@ -6,6 +6,7 @@ GitHub Actions 每 5 分鐘讀取香港天文台的 `warnsum` 開放數據，並
 
 | 天文台訊號 | 圖片 |
 | --- | --- |
+| `WTS` | `Thunderstorm.png` |
 | `TC1` | `T1.png` |
 | `TC3` | `T3.png` |
 | `TC8NE` / `TC8NW` / `TC8SE` / `TC8SW` | 相應的 `T8-*.png` |
